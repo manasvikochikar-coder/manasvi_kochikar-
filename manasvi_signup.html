@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Your Account</title>
+</head>
+<body>
+
+    <center>
+        <header>
+            <h1>Join Our Community</h1>
+            <p>Fill in the details below to create your free account.</p>
+        </header>
+
+        <hr width="50%">
+
+        <section>
+            <form action="/submit-signup" method="POST">
+                
+                <table cellpadding="10">
+                    <tr>
+                        <td><label for="fname">First Name:</label></td>
+                        <td><input type="text" id="fname" name="fname" required placeholder="John"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lname">Last Name:</label></td>
+                        <td><input type="text" id="lname" name="lname" required placeholder="Doe"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">Email Address:</label></td>
+                        <td><input type="email" id="email" name="email" required placeholder="john@example.com"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" name="password" required minlength="8"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="dob">Date of Birth:</label></td>
+                        <td><input type="date" id="dob" name="dob"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender:</label></td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the <a href="#">Terms of Service</a></label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button type="reset">Clear Form</button>
+                            <button type="submit"><b>Create Account</b></button>
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+        </section>
+
+        <hr width="50%">
+
+        <footer>
+            <p>Already have an account? <a href="login.html">Log in here</a></p>
+            <p><a href="index.html">← Back to Portfolio</a></p>
+        </footer>
+    </center>
+
+</body>
+</html>
